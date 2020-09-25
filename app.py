@@ -3,18 +3,15 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import missingno as msno
-import seaborn
+# import seaborn
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
-import tensorflow as tf
-from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Dense, Dropout, LSTM
 from numpy.random import seed
 import time
 import copy
-import chainer
-import chainer.functions as F
-import chainer.links as L
+# import chainer
+# import chainer.functions as F
+# import chainer.links as L
 from plotly import tools
 from keras.models import load_model
 # from plotly.graph_objs import *
