@@ -3,7 +3,6 @@ streamlit
 plotly
 pandas
 tensorflow
-matplotlib.pyplot
-tensorflow.keras.backend
+matplotlib
 keras
-sklearn.preprocessing
+sklearn
