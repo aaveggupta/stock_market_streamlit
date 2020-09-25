@@ -1,0 +1,9 @@
+numpy
+streamlit
+plotly
+pandas
+tensorflow
+matplotlib.pyplot
+tensorflow.keras.backend
+keras
+sklearn.preprocessing
