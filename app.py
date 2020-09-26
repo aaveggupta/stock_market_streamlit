@@ -129,6 +129,24 @@ temp_input = x_input.tolist()
 # plt.plot(day_new, scaler.inverse_transform(new_data[5081:]))
 # plt.plot(day_pred, scaler.inverse_transform(lst_output), 'r')
 
+pred1 = [[1709.119], [1725.7922], [1746.3138], [1766.9338], [1786.2156],
+         [1803.7695], [1819.6552], [1834.151], [1847.6532], [1860.6]]
+
+
+close = [1772.1, 1809.3, 1787.45, 1792.2, 1751.65, 1821.9, 1794.65,
+         1855.95, 1835.1, 1819.4, 1838.1, 1797.75, 1777.8, 1769.35,
+         1741.15, 1754.65, 1835.15, 1889.45, 1885.2, 1868.7, 1886.75,
+         1886.05, 1941.85, 1886., 1845.55, 1791.6, 1789.9, 1787.8,
+         1805.85, 1806.05, 1883.65, 1881.05, 1875.8, 1841.3, 1850.75,
+         1897.35, 1877.3, 1810.65, 1781.95, 1739.8, 1781.1, 1776.7,
+         1783.75, 1777.7, 1798.95, 1826.75, 1814.2, 1804.85, 1791.7,
+         1800.55, 1820.7, 1827.95, 1785.15, 1804.05, 1829.85, 1829.6,
+         1816., 1864.1, 1883.25, 1832.6]
+
+pred2 = [1709.119, 1725.7922, 1746.3138, 1766.9338, 1786.2156,
+         1803.7695, 1819.6552, 1834.151, 1847.6532, 1860.6]
+
+
 
 def plot_fig():
     fig = go.Figure()
@@ -181,4 +199,16 @@ elif (option == 'Day-9'):
     st.write('Closing price of HDFC will be ' + str(pred[8]))
 elif (option == 'Day-10'):
     st.write('Closing price of HDFC will be ' + str(pred[9]))
+    
+st.header('Prediction Graph for the Next 10 Days')
+
+day_new = np.arange(1, 61)
+day_pred = np.arange(61, 71)
+
+close = np.array(close)
+pred2 = np.array(pred2)
+
+plt.plot(day_new, close)
+plt.plot(day_pred, pred2, 'r')
+st.pyplot(plt)
 
